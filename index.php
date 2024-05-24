@@ -54,9 +54,104 @@
     </nav>
     </header>
     
-    <section>
+    <section id="presentacion" class="presentacion">
         <h2>¡Hola Mundo!</h2>
         <p>Bienvenido a mi sitio web. Aquí encontrarás contenido interesante sobre diversos temas.</p>
     </section>
+    <section id="tarjetas" class="tarjetas">
+        <div class="contenido-seccion">
+            <h2>Ejercicios</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src= "img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 1 y 2</h3>
+                        <p>Pagina web para descargar las unidades de estudio de las materias de la UNNE</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 3 y 4</h3>
+                        <p>Con mi grupo de la Tecnicatura realizamos una pagina Web sobre la Flora y Fauna de nuestra provincia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 5 y 6</h3>
+                        <p>Una Aplicacion de pantalla para gestionar los productos, usuarios, reportes, transacciones, etc.</p>
+                    </div>
+            </div>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 7 y 8</h3>
+                        <p>Trabajando en Proyectos Futuros</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 9 y 10</h3>
+                        <p>Trabajando en Proyectos Futuros</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 11 y 12</h3>
+                        <p>Trabajando en Proyectos Futuros</p>
+                    </div>
+                </div>
+            </div>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src= "img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 13 y 14</h3>
+                        <p>Pagina web para descargar las unidades de estudio de las materias de la UNNE</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 15 y 16</h3>
+                        <p>Con mi grupo de la Tecnicatura realizamos una pagina Web sobre la Flora y Fauna de nuestra provincia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 17 y 18</h3>
+                        <p>Una Aplicacion de pantalla para gestionar los productos, usuarios, reportes, transacciones, etc.</p>
+                    </div>
+            </div>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 19 y 20</h3>
+                        <p>Trabajando en Proyectos Futuros</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 21 y 22</h3>
+                        <p>Trabajando en Proyectos Futuros</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img\Prueba-Tecnica-1200x900.png" alt="">
+                    <div class="overlay">
+                        <h3>Ejercicios 23 y 24</h3>
+                        <p>Trabajando en Proyectos Futuros</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
