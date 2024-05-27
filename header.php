@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios</title>
+    <title>👨‍💻Ejercicios</title>
     <link rel="stylesheet" href="style_Ejer.css">
 </head>
 <body>
 <header>
-    <h1>Bienvenido a mi sitio web</h1>
+    <h1>Seccion de Ejercicios</h1>
     <nav class="navbar">
         <ul>
             <li><a href="../index.php">Inicio</a></li>

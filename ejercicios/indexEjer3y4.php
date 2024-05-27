@@ -27,9 +27,11 @@ function ejercicio4($num1, $num2) {
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
-            <h1>Opuesto del numero ingresado</h1>
+            <h1>Ejercicio 3</h1>
+            <h2>Opuesto del numero ingresado</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="a">Ingrese el Numero:</label>
                 <input type="number" id="a" name="a" required>
@@ -45,7 +47,8 @@ function ejercicio4($num1, $num2) {
         </div>
         
         <div class="card">
-            <h1>Calculadora de A * B</h1>
+            <h1>Ejercicio 4</h1>
+            <h2>Calculadora de A * B</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="b">Valor de A:</label>
                 <input type="number" id="b" name="b" required>
@@ -62,5 +65,9 @@ function ejercicio4($num1, $num2) {
             ?>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

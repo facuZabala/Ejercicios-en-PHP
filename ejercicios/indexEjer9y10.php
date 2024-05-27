@@ -32,9 +32,11 @@ function ejercicio10($duracion) {
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
-            <h1>Comparador de Numeros</h1>
+            <h1>Ejercicio 9</h1>
+            <h2>Comparador de Numeros</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="a">Valor de A:</label>
                 <input type="number" id="a" name="a" required>
@@ -54,7 +56,8 @@ function ejercicio10($duracion) {
         </div>
 
         <div class="card">
-            <h1>Calculador de Precio de llamada</h1>
+            <h1>Ejercicio 10</h1>
+            <h2>Calculador de Precio de llamada</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="c">Duracion de la llamada:</label>
                 <input type="number" id="c" name="c" required>
@@ -70,5 +73,9 @@ function ejercicio10($duracion) {
             ?>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

@@ -48,6 +48,7 @@ $resultado2 = ejercicio24();
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
             <h1>Promediar los números ingresados</h1>
@@ -82,5 +83,9 @@ $resultado2 = ejercicio24();
             </ul>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

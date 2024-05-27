@@ -45,6 +45,7 @@ function ejercicio20($numeros) {
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
             <h1>Ejercicio 19</h1>
@@ -82,5 +83,9 @@ function ejercicio20($numeros) {
             ?>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

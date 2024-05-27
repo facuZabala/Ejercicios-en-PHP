@@ -38,9 +38,11 @@ function ejercicio8($num1, $num2) {
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
-            <h1>Clasificador de Triangulos</h1>
+            <h1>Ejercicio 7</h1>
+            <h2>Clasificador de Triangulos</h>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="a">Valor de A:</label>
                 <input type="number" id="a" name="a" required>
@@ -63,7 +65,8 @@ function ejercicio8($num1, $num2) {
         </div>
 
         <div class="card">
-            <h1>Comparador de numeros</h1>
+            <h1>Ejercicio 8</h1>
+            <h2>Comparador de numeros</h>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="d">Valor de A:</label>
                 <input type="number" id="d" name="d" required>
@@ -82,5 +85,9 @@ function ejercicio8($num1, $num2) {
             ?>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

@@ -42,9 +42,11 @@ function ejercicio11($a, $b, $c) {
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
-            <h1>Calculadora de Operaciones Básicas</h1>
+            <h1>Ejercicio 11</h1>
+            <h2>Calculadora de Operaciones Básicas</h>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="a">Valor de A:</label>
                 <input type="number" id="a" name="a" required>
@@ -70,7 +72,8 @@ function ejercicio11($a, $b, $c) {
         </div>
 
         <div class="card">
-            <h1>Calculadora de Operaciones Básicas Solo si son Positivas</h1>
+            <h1>Ejercicio 12</h1>
+            <h2>Calculadora de Operaciones Básicas Solo si son Positivas</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="d">Valor de A:</label>
                 <input type="number" id="d" name="d" required>
@@ -113,5 +116,9 @@ function ejercicio11($a, $b, $c) {
             ?>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

@@ -35,9 +35,11 @@ function ejercicio2($e, $f) {
 ?>
 
 <body>
+    <section id="indexEjer">
     <div class="container">
         <div class="card">
-            <h1>Calculadora de A + B - C + 100</h1>
+            <h1>Ejercicio 1</h1>
+            <h2>Calculadora de A + B - C + 100</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="a">Valor de A:</label>
                 <input type="number" id="a" name="a" required>
@@ -61,7 +63,8 @@ function ejercicio2($e, $f) {
         </div>
         
         <div class="card">
-            <h1>Calculadora de (A - B) * (A + B)</h1>
+            <h1>Ejercicio 2</h1>
+            <h2>Calculadora de (A - B) * (A + B)</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="e">Valor de A:</label>
                 <input type="number" id="e" name="e" required>
@@ -81,5 +84,9 @@ function ejercicio2($e, $f) {
             ?>
         </div>
     </div>
+    </section>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>
