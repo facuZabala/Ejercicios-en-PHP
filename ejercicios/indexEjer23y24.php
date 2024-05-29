@@ -51,7 +51,8 @@ $resultado2 = ejercicio24();
     <section id="indexEjer">
     <div class="container">
         <div class="card">
-            <h1>Promediar los números ingresados</h1>
+            <h1>Ejercicio 23</h1>
+            <h2>Promediar los números ingresados</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 <label for="numero">Ingrese un número (0 o negativo para terminar):</label>
                 <input type="number" id="numero" name="numero" required>

@@ -41,7 +41,7 @@ function ejercicio6($numero) {
             <h1>Ejercicio 5</h1>
             <h2>Mayor o Menor a 100</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="a">Valor de A:</label>
+                <label for="a">Ingrese el numero:</label>
                 <input type="number" id="a" name="a" required>
                 <button type="submit">Calcular</button>
             </form>
@@ -58,7 +58,7 @@ function ejercicio6($numero) {
             <h1>Ejercicio 6</h1>
             <h2>Positivo o Negativo</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="b">Valor de A:</label>
+                <label for="b">Ingrese el numero:</label>
                 <input type="number" id="b" name="b" required>
                 <button type="submit">Calcular</button>
             </form>

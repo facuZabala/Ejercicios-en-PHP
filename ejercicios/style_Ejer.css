@@ -31,6 +31,12 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-height: 500px;
     overflow-y: auto;
+    margin-top: -20px;
+}
+
+input::placeholder{
+    color: #fff;
+    opacity: 1;
 }
 
 h1, h2 {
@@ -69,6 +75,7 @@ input {
     margin-bottom: 20px;
     box-sizing: border-box;
     background-color: #03aa43;
+    color: #fff;
 }
 
 button {
@@ -134,11 +141,14 @@ header {
     font-family: inherit;
     margin: 0;
     cursor: pointer;
+    transition: background-color 1.5s, transform 1.5s;
+
 }
 
 .dropdown:hover .dropbtn {
     background-color: #15a338;
     color: black;
+    
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {

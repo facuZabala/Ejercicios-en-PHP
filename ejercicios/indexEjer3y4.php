@@ -50,10 +50,9 @@ function ejercicio4($num1, $num2) {
             <h1>Ejercicio 4</h1>
             <h2>Calculadora de A * B</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="b">Valor de A:</label>
-                <input type="number" id="b" name="b" required>
-                <label for="c">Valor de B:</label>
-                <input type="number" id="c" name="c" required>
+                <label for="b">Ingrese los numeros:</label>
+                <input type="number" id="b" name="b" placeholder="Valor de A" required>
+                <input type="number" id="c" name="c" placeholder="Valor de B" required>
                 <button type="submit">Calcular</button>
             </form>
             <?php

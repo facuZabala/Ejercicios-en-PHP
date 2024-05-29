@@ -41,14 +41,12 @@ function ejercicio2($e, $f) {
             <h1>Ejercicio 1</h1>
             <h2>Calculadora de A + B - C + 100</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="a">Valor de A:</label>
-                <input type="number" id="a" name="a" required>
+                <label for="a">Ingrese los numeros:</label>
+                <input type="number" id="a" name="a" placeholder="Valor de A" required>
 
-                <label for="b">Valor de B:</label>
-                <input type="number" id="b" name="b" required>
+                <input type="number" id="b" name="b" placeholder="Valor de B" required>
 
-                <label for="c">Valor de C:</label>
-                <input type="number" id="c" name="c" required>
+                <input type="number" id="c" name="c" placeholder="Valor de C" required>
 
                 <button type="submit">Calcular</button>
             </form>
@@ -66,11 +64,9 @@ function ejercicio2($e, $f) {
             <h1>Ejercicio 2</h1>
             <h2>Calculadora de (A - B) * (A + B)</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="e">Valor de A:</label>
-                <input type="number" id="e" name="e" required>
+                <input type="number" id="e" name="e" placeholder="Valor de A" required>
 
-                <label for="f">Valor de B:</label>
-                <input type="number" id="f" name="f" required>
+                <input type="number" id="f" name="f" placeholder="Valor de B" required>
 
                 <button type="submit">Calcular</button>
             </form>

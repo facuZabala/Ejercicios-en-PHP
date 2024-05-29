@@ -44,14 +44,12 @@ function ejercicio8($num1, $num2) {
             <h1>Ejercicio 7</h1>
             <h2>Clasificador de Triangulos</h>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="a">Valor de A:</label>
-                <input type="number" id="a" name="a" required>
+                <label for="a">Ingrese los numeros:</label>
+                <input type="number" id="a" name="a" placeholder="Valor de A" required>
                 
-                <label for="b">Valor de B:</label>
-                <input type="number" id="b" name="b" required>
+                <input type="number" id="b" name="b" placeholder="Valor de B" required>
                 
-                <label for="c">Valor de C:</label>
-                <input type="number" id="c" name="c" required>
+                <input type="number" id="c" name="c" placeholder="Valor de C" required>
                 
                 <button type="submit">Calcular</button>
             </form>
@@ -68,11 +66,10 @@ function ejercicio8($num1, $num2) {
             <h1>Ejercicio 8</h1>
             <h2>Comparador de numeros</h>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="d">Valor de A:</label>
-                <input type="number" id="d" name="d" required>
+                <label for="d">Ingrese los numeros:</label>
+                <input type="number" id="d" name="d" placeholder="Valor de A" required>
                 
-                <label for="e">Valor de B:</label>
-                <input type="number" id="e" name="e" required>
+                <input type="number" id="e" name="e" placeholder="Valor de B" required>
                 
                 <button type="submit">Calcular</button>
             </form>
