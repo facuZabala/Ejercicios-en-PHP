@@ -1,30 +1,4 @@
 <?php
-include '../header.php';
-// Verifica si se han enviado datos del formulario
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Inicializa variables para los resultados
-    $resultado1 = $resultado2 = null;
-
-    // Obtén y procesa los valores de A, B y C para el ejercicio 1
-    if (isset($_POST['a']) && isset($_POST['b']) && isset($_POST['c'])) {
-        $a = $_POST['a'];
-        $b = $_POST['b'];
-        $c = $_POST['c'];
-
-        // Calcula el resultado utilizando la función ejercicio1
-        $resultado1 = ejercicio1($a, $b, $c);
-    } 
-
-    // Obtén y procesa los valores de E y F para el ejercicio 2
-    if (isset($_POST['e']) && isset($_POST['f'])) {
-        $e = $_POST['e'];
-        $f = $_POST['f'];
-
-        // Calcula el resultado utilizando la función ejercicio2
-        $resultado2 = ejercicio2($e, $f);
-    }
-}
-
 function ejercicio1($a, $b, $c) {
     return $a + $b - $c + 100;
 }
@@ -34,55 +8,75 @@ function ejercicio2($e, $f) {
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card Form</title>
+    <link rel="stylesheet" href="style_Ejer.css">
+</head>
 <body>
     <section id="indexEjer">
-    <div class="container">
-        <div class="card">
-            <h1>Ejercicio 1</h1>
-            <h2>Calculadora de A + B - C + 100</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="a">Ingrese los numeros:</label>
-                <input type="number" id="a" name="a" placeholder="Valor de A" required>
+        <div class="container">
+            <div class="flip-card" id="card1">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Ejercicio 1</h1>
+                        <h2>Calculadora de A + B - C + 100</h2>
+                        <form id="form1">
+                            <label for="a">Ingrese los números:</label>
+                            <input type="number" id="a" name="a" placeholder="Valor de A" required>
+                            <input type="number" id="b" name="b" placeholder="Valor de B" required>
+                            <input type="number" id="c" name="c" placeholder="Valor de C" required>
+                            <button type="submit">Calcular</button>
+                        </form>
+                    </div>
+                    <div class="flip-card-back" id="result1"></div>
+                </div>
+            </div>
 
-                <input type="number" id="b" name="b" placeholder="Valor de B" required>
-
-                <input type="number" id="c" name="c" placeholder="Valor de C" required>
-
-                <button type="submit">Calcular</button>
-            </form>
-        
-            <?php
-            // Verifica si $resultado está definido antes de mostrarlo
-            if (isset($resultado1)) {
-                echo "<h2>Resultado:</h2>";
-                echo "<p>El resultado de la operación es: $resultado1</p>";
-            }
-            ?>
+            <div class="flip-card" id="card2">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h1>Ejercicio 2</h1>
+                        <h2>Calculadora de (A - B) * (A + B)</h2>
+                        <form id="form2">
+                            <input type="number" id="e" name="e" placeholder="Valor de A" required>
+                            <input type="number" id="f" name="f" placeholder="Valor de B" required>
+                            <button type="submit">Calcular</button>
+                        </form>
+                    </div>
+                    <div class="flip-card-back" id="result2"></div>
+                </div>
+            </div>
         </div>
-        
-        <div class="card">
-            <h1>Ejercicio 2</h1>
-            <h2>Calculadora de (A - B) * (A + B)</h2>
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <input type="number" id="e" name="e" placeholder="Valor de A" required>
-
-                <input type="number" id="f" name="f" placeholder="Valor de B" required>
-
-                <button type="submit">Calcular</button>
-            </form>
-
-            <?php
-            // Verifica si $resultado está definido antes de mostrarlo
-            if (isset($resultado2)) {
-                echo "<h2>Resultado:</h2>";
-                echo "<p>El resultado de la operación es: $resultado2</p>";
-            }
-            ?>
-        </div>
-    </div>
     </section>
+    
+    <script>
+        document.getElementById('form1').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            fetch('process.php', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.json()).then(data => {
+                document.getElementById('result1').innerHTML = `<h2>Resultado:</h2><p>El resultado de la operación es: ${data.resultado1}</p>`;
+                document.getElementById('card1').querySelector('.flip-card-inner').classList.add('flipped');
+            });
+        });
+
+        document.getElementById('form2').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            fetch('process.php', {
+                method: 'POST',
+                body: formData
+            }).then(response => response.json()).then(data => {
+                document.getElementById('result2').innerHTML = `<h2>Resultado:</h2><p>El resultado de la operación es: ${data.resultado2}</p>`;
+                document.getElementById('card2').querySelector('.flip-card-inner').classList.add('flipped');
+            });
+        });
+    </script>
 </body>
-<?php
-include 'footer.php';
-?>
 </html>

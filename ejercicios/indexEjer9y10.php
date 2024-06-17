@@ -38,11 +38,10 @@ function ejercicio10($duracion) {
             <h1>Ejercicio 9</h1>
             <h2>Comparador de Numeros</h2>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                <label for="a">Valor de A:</label>
-                <input type="number" id="a" name="a" required>
+                <label for="a">Ingrese los Numeros:</label>
+                <input type="number" id="a" name="a" placeholder="Valor de A" required>
 
-                <label for="b">Valor de B:</label>
-                <input type="number" id="b" name="b" required>
+                <input type="number" id="b" name="b" placeholder="Valor de B" required>
 
                 <button type="submit">Calcular</button>
             </form>
